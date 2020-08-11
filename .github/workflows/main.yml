@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # Lint some YAML
+    - name: YAML Lint
+      uses: ibiqlik/action-yamllint@v1.0.0
+      with:
+        # File(s) or Directory, separate by space if multiple files or folder are specified
+        file_or_dir: devfiles
