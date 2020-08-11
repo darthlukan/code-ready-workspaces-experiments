@@ -1,0 +1,17 @@
+---
+apiVersion: 1.0.0
+metadata:
+  name: hello-devfile
+projects:
+  - name: "PROJECT_NAME"
+    clonePath: "CLONE_TO_THIS_DIR"
+    source:
+      type: git
+      location: "REPO_URL"
+components:
+  - type: chePlugin
+    id: "PLUGIN_ID"
+  - name: "MY_PLUGIN_NAME"
+    id: "MY_PLUGIN_ID"
+    registryUrl: "MY_PLUGIN_REGISTRY_URL"
+...
