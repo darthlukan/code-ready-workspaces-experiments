@@ -1,0 +1,19 @@
+---
+apiVersion: 1.0.0
+metadata:
+  name: gitops-workshop
+projects:
+  - name: gitops-workshop
+    source:
+      type: git
+      location: "https://github.com/darthlukan/gitops-workshop.git"
+components:
+  - type: dockerimage
+    image: "TODO"
+    alias: workshop-env
+    memoryLimit: 512Mi
+    mountSources: true
+    env:
+      name: "KEY"
+      value: "VAL"
+...
