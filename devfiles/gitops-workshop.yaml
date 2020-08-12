@@ -9,11 +9,8 @@ projects:
       location: "https://github.com/darthlukan/gitops-workshop.git"
 components:
   - type: dockerimage
-    image: "TODO"
+    image: "quay.io/btomlins/gitops-workshop:latest"
     alias: workshop-env
     memoryLimit: 512Mi
     mountSources: true
-    env:
-      name: "KEY"
-      value: "VAL"
 ...
