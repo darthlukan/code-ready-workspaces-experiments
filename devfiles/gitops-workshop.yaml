@@ -13,4 +13,5 @@ components:
     alias: workshop-env
     memoryLimit: 512Mi
     mountSources: true
+    command: ['sleep', 'infinity']
 ...
